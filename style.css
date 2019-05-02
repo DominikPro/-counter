@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.box {
+  height: 15vh;
+  width: 20vw;
+}
+
+.number {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  text-align: center;
+  color: #c02626;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.counter {
+  width: 250px;
+  height: 110px;
+  background-color: #dbdada;
+  border-radius: 15px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.titleCounter {
+  display: block;
+  font-size: 1.7rem;
+  color: #01556e;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+//visual settings
+$fontsize:1.7rem;
+$fontColor:rgb(1, 85, 110);
+$fontColorNumber:rgb(192, 38, 38);
+$backGrCo: rgb(219, 218, 218);
+$fontNumberSize:4rem;
+
+
+
+.box {
+    height: 15vh;
+    width: 20vw;
+    // background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.number {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    text-align: center;
+    color: $fontColorNumber;
+    font-weight: 700;
+    font-size: $fontNumberSize;
+}
+
+.counter {
+
+    width: 250px;
+    height: 110px;
+    background-color: $backGrCo;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.titleCounter {
+    display: block;
+    font-size: $fontsize;
+    color: $fontColor;
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    text-align: center;
+    transform: translateY(-50%);
+
+}
