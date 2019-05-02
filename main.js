@@ -1,4 +1,4 @@
-let czasnaPrzewiniecie = 10; //W mili sekundach
+let czasnaPrzewiniecie = 10; //W mili sekundach szybkość przewijania
 let wielkosc = 66; // Do jakiek liczby ma przewijać
 let number = 0; // liczba startowa
 let interwal;
