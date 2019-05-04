@@ -1,58 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
-
 //visual settings
-$fontsize:1.7rem;
-$fontColor:rgb(1, 85, 110);
-$fontColorNumber:rgb(192, 38, 38);
+$fontsize: 1.7rem;
+$fontColor: rgb(1, 85, 110);
+$fontColorNumber: rgb(192, 38, 38);
 $backGrCo: rgb(219, 218, 218);
-$fontNumberSize:4rem;
-
-
+$fontNumberSize: 4rem;
 
 .box {
-    height: 15vh;
-    width: 100vw;
-    // background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  height: 15vh;
+  width: 100vw;
+  // background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .number {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 5%;
-    text-align: center;
-    color: $fontColorNumber;
-    font-weight: 700;
-    font-size: $fontNumberSize;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  text-align: center;
+  color: $fontColorNumber;
+  font-weight: 700;
+  font-size: $fontNumberSize;
 }
 
 .counter {
-    float: left;
-    width: 250px;
-    height: 110px;
-    background-color: $backGrCo;
-    border-radius: 15px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+  float: left;
+  width: 250px;
+  height: 110px;
+  background-color: $backGrCo;
+  border-radius: 15px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titleCounter {
-    display: block;
-    font-size: $fontsize;
-    color: $fontColor;
-    position: absolute;
-    width: 100%;
-    top: 85%;
-    text-align: center;
-    transform: translateY(-50%);
+  display: block;
+  font-size: $fontsize;
+  color: $fontColor;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  text-align: center;
+  transform: translateY(-50%);
+}
 
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.counter {
+  animation: animation 1.9s 0s linear;
 }
